@@ -66,6 +66,14 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if self.timer !== nil{
+            playButton.setTitle("再生", for: .normal)
+            returnButton.isEnabled = true
+            nextButton.isEnabled = true
+            self.timer.invalidate()
+        }
+        
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         // 遷移先のResultViewControllerで宣言しているimageに値を代入して渡す
