@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        image1 = UIImage(named: "image1")
-        image2 = UIImage(named: "image2")
-        image3 = UIImage(named: "image3")
+        image1 = UIImage(named: "image1.jpeg")
+        image2 = UIImage(named: "image2.jpeg")
+        image3 = UIImage(named: "image3.jpeg")
         playButton.setTitle("再生", for: .normal)
         
         self.imageButton.setImage(image1, for: .normal)
